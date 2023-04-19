@@ -14,7 +14,9 @@ discovery = true
 [rpc]
 port = 8545
 apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc", "parity_accounts"]
-interface = "local"
+# interface = "local"
+interface = "all"
+cors = ["*"]
 
 [websockets]
 disable = false
