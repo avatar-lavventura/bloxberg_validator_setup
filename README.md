@@ -9,7 +9,7 @@ Remote Machine Minimum System Requirements:
 
 These are simply the minimum requirements and we do recommend to allocate more resources to ensure stability.
 
-With the latest update to parity 2.7, it is also necessary for your server CPU to support aes. This can be found by running:
+With the latest update to Parity 2.7, it is also necessary for your server CPU to support aes. This can be found by running:
 
 ```bash
 cat /proc/cpuinfo
