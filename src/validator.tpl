@@ -37,6 +37,9 @@ gas_floor_target = "10000000"
 
 [footprint]
 tracing = "off"
+cache_size = 1024
+db_compaction = "hdd"
+pruning = "fast"  # prune old state data. Maintains journal overlay - fast but extra 50MB of memory used.
 
 [misc]
 log_file = "/home/parity/.local/share/io.parity.ethereum/bloxberg.log"
