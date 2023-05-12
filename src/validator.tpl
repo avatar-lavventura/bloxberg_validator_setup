@@ -13,7 +13,7 @@ discovery = true
 
 [rpc]
 port = 8545
-apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc", "parity_accounts"]
+apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc"]
 # interface = "local"
 interface = "all"
 cors = ["*"]
@@ -43,3 +43,6 @@ pruning = "fast"  # prune old state data. Maintains journal overlay - fast but e
 
 [misc]
 log_file = "/home/parity/.local/share/io.parity.ethereum/bloxberg.log"
+
+[ipc]
+disable = true

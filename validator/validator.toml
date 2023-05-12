@@ -8,16 +8,15 @@ auto_update = "all"
 [network]
 port = 30303
 reserved_peers = "/home/parity/.local/share/io.parity.ethereum/bootnodes.txt"
-nat = "extip:130.183.206.234"
+nat = "extip:95.7.132.244"
 discovery = true
 
 [rpc]
 port = 8545
-apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc", "parity_accounts"]
+apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc"]
 # interface = "local"
 interface = "all"
 cors = ["*"]
-
 
 [websockets]
 disable = false
@@ -29,8 +28,8 @@ origins = ["none"]
 password = ["/home/parity/.local/share/io.parity.ethereum/validator.pwd"]
 
 [mining]
-# CHANGE ENGINE SIGNER TO VALIDATOR ADDRESS
-engine_signer = ""
+#CHANGE ENGINE SIGNER TO VALIDATOR ADDRESS
+engine_signer = "0xdbd7ae0bf29fc66fc21ef18572fcdc90cc625340"
 reseal_on_txs = "none"
 force_sealing = true
 min_gas_price = 1000000
@@ -40,8 +39,10 @@ gas_floor_target = "10000000"
 tracing = "off"
 cache_size = 1024
 db_compaction = "hdd"
-# Prune old state data. Maintains journal overlay - fast but extra 50MB of memory used.
-pruning = "fast"
+pruning = "fast"  # prune old state data. Maintains journal overlay - fast but extra 50MB of memory used.
 
 [misc]
 log_file = "/home/parity/.local/share/io.parity.ethereum/bloxberg.log"
+
+[ipc]
+disable = true
